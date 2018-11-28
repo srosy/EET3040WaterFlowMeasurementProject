@@ -13,16 +13,10 @@ template<class T> inline Print &operator <<(Print &obj, T arg) {
 
 char user_input;
 
-long pressure;
-int pressurePin = A0; // input
-
+int numTimesToCheckForSignal = 10000;
 long flowRate;
-int flowRatePin = A1; // input
+int flowRatePin = 8; // input
 
-long powerConsumption;
-int powerConsumptionPin = A2; // input
-
-boolean motorOn = LOW;
-int motorPin = 13; // input
+int motorPin = 6; // output
 
 
